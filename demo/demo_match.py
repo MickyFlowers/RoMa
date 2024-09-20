@@ -15,9 +15,9 @@ if torch.backends.mps.is_available():
 if __name__ == "__main__":
     from argparse import ArgumentParser
     parser = ArgumentParser()
-    parser.add_argument("--im_A_path", default="assets/toronto_A.jpg", type=str)
-    parser.add_argument("--im_B_path", default="assets/toronto_B.jpg", type=str)
-    parser.add_argument("--save_path", default="demo/roma_warp_toronto.jpg", type=str)
+    parser.add_argument("--im_A_path", default="assets/00837.jpg", type=str)
+    parser.add_argument("--im_B_path", default="assets/Out_00837_resized.jpg", type=str)
+    parser.add_argument("--save_path", default="demo/test.jpg", type=str)
 
     args, _ = parser.parse_known_args()
     im1_path = args.im_A_path
